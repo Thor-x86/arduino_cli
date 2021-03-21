@@ -10,8 +10,11 @@ void help(String *cmdPtr) {
     Serial.println("get ----- Get input from a digital/analog pin");
     Serial.println("set ----- Set output to a digital/analog pin");
     Serial.println("tail ---- Keep reading input from digital/analog pin");
-    Serial.println("send ---- Send data to another Serial Port");
-    Serial.println("listen -- Listen for another Serial Port");
+    #ifdef HAVE_HWSERIAL1
+      // Only for boards with multiple Serial HW
+      Serial.println("send ---- Send data to another Serial Port");
+      Serial.println("listen -- Listen for another Serial Port");
+    #endif
     Serial.println("help ---- Show information about available commands");
     Serial.println("");
     Serial.println("Run this command for details: help <command_name>");
@@ -41,31 +44,36 @@ void help(String *cmdPtr) {
       Serial.println("");
       Serial.println("NOTE: Hit enter to stop listening");
       Serial.println("");
-    } else if(cmd == "send") {
-      Serial.println("USAGE: send <message> [baudrate]");
-      Serial.println("");
-      Serial.println("Default:");
-      Serial.println("    baudrate = 115200");
-      Serial.println("");
-      Serial.println("Examples:");
-      Serial.println("    send hello");
-      Serial.println("    send \"hello, world!\"");
-      Serial.println("    send \"first line\\nsecond line\"");
-      Serial.println("    send 132");
-      Serial.println("    send 0b10011011");
-      Serial.println("    send 0x7f");
-      Serial.println("    send hello 9600");
-      Serial.println("    send \"hello, world!\" 9600");
-      Serial.println("");
-    } else if(cmd == "listen") {
-      Serial.println("USAGE: listen [baudrate]");
-      Serial.println("");
-      Serial.println("Default:");
-      Serial.println("    baudrate = 115200");
-      Serial.println("");
-      Serial.println("NOTE: Hit enter to stop listening");
-      Serial.println("");
-    } else if(cmd == "help") {
+    }
+    #ifdef HAVE_HWSERIAL1
+      // Only for boards with multiple Serial HW
+      else if(cmd == "send") {
+        Serial.println("USAGE: send <message> [baudrate]");
+        Serial.println("");
+        Serial.println("Default:");
+        Serial.println("    baudrate = 115200");
+        Serial.println("");
+        Serial.println("Examples:");
+        Serial.println("    send hello");
+        Serial.println("    send \"hello, world!\"");
+        Serial.println("    send \"first line\\nsecond line\"");
+        Serial.println("    send 132");
+        Serial.println("    send 0b10011011");
+        Serial.println("    send 0x7f");
+        Serial.println("    send hello 9600");
+        Serial.println("    send \"hello, world!\" 9600");
+        Serial.println("");
+      } else if(cmd == "listen") {
+        Serial.println("USAGE: listen [baudrate]");
+        Serial.println("");
+        Serial.println("Default:");
+        Serial.println("    baudrate = 115200");
+        Serial.println("");
+        Serial.println("NOTE: Hit enter to stop listening");
+        Serial.println("");
+      }
+    #endif
+    else if(cmd == "help") {
       help();
     } else {
       Serial.println("Command \"" + cmd + "\" not found");

@@ -1,5 +1,6 @@
 #include "arduino_cli.h"
 
+#ifdef HAVE_HWSERIAL1
 /**
  * Send data to another Serial Port
  */
@@ -131,9 +132,9 @@ void cmd_send(String *cmd, String *args) {
     
     long long messageBytes;
     if(radix > 0) {
-      messageBytes = strtoll(&messageStr[2], NULL, radix);
+      messageBytes = strtol(&messageStr[2], NULL, radix);
     } else {
-      messageBytes = strtoll(&messageStr[0], NULL, 0);
+      messageBytes = strtol(&messageStr[0], NULL, 0);
     }
     
     Serial1.write((byte)(messageBytes & 0xff));
@@ -174,3 +175,4 @@ void cmd_send(String *cmd, String *args) {
   Serial.println("ok");
   Serial.println("");
 }
+#endif

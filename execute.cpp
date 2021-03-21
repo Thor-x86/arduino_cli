@@ -12,11 +12,18 @@ void execute(String *cmdName, String *cmdValues) {
     cmd_set(cmdName, cmdValues);
   } else if(*cmdName == "tail") {
     cmd_tail(cmdName, cmdValues);
-  } else if(*cmdName == "send") {
-    cmd_send(cmdName, cmdValues);
-  } else if(*cmdName == "listen") {
-    cmd_listen(cmdName, cmdValues);
-  } else if(*cmdName == "help") {
+  }
+  
+  // Only for boards with multiple Serial HW
+  #ifdef HAVE_HWSERIAL1
+    else if(*cmdName == "send") {
+      cmd_send(cmdName, cmdValues);
+    } else if(*cmdName == "listen") {
+      cmd_listen(cmdName, cmdValues);
+    }
+  #endif
+  
+  else if(*cmdName == "help") {
     if(cmdValues->length() > 0) {
       help(cmdValues);
     } else {

@@ -1,5 +1,6 @@
 #include "arduino_cli.h"
 
+#ifdef HAVE_HWSERIAL1
 /**
  * Listen for another Serial Port
  */
@@ -81,3 +82,4 @@ void cmd_listen(String *cmd, String *args) {
     Serial.read();
   }
 }
+#endif
