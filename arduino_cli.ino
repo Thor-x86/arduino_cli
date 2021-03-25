@@ -7,17 +7,22 @@
 
 #include "arduino_cli.h"
 
-void setup() {
+void setup()
+{
   // Initialize Serial
   Serial.begin(115200);
 
   // Blink LED if serial not connected
   bool isLit = false;
   pinMode(LED_BUILTIN, OUTPUT);
-  while (!Serial) {
-    if(isLit) {
+  while (!Serial)
+  {
+    if (isLit)
+    {
       digitalWrite(LED_BUILTIN, LOW);
-    } else {
+    }
+    else
+    {
       digitalWrite(LED_BUILTIN, HIGH);
     }
     isLit = !isLit;
@@ -33,12 +38,14 @@ void setup() {
   Serial.println("");
 }
 
-void loop() {
+void loop()
+{
   // Get char length
   int n = Serial.available();
-  
+
   // Parse command if available
-  if (n > 0) {
+  if (n > 0)
+  {
     // Lit the LED to indicate working
     digitalWrite(LED_BUILTIN, LOW);
 
@@ -46,19 +53,27 @@ void loop() {
     bool isReadCommand = true;
     String commandName = "";
     String commandValue = "";
-    
+
     // Print and resolve name+value
     Serial.print("> ");
-    for(int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
       char currentChar = (char)Serial.read();
       Serial.print(currentChar);
-      if(currentChar == '\n' || currentChar == '\r') {
+      if (currentChar == '\n' || currentChar == '\r')
+      {
         continue;
-      } else if(currentChar == ' ' && isReadCommand) {
+      }
+      else if (currentChar == ' ' && isReadCommand)
+      {
         isReadCommand = false;
-      } else if(isReadCommand) {
+      }
+      else if (isReadCommand)
+      {
         commandName += currentChar;
-      } else {
+      }
+      else
+      {
         commandValue += currentChar;
       }
     }
