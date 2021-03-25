@@ -85,3 +85,9 @@ void loop()
     digitalWrite(LED_BUILTIN, HIGH);
   }
 }
+
+void yield()
+{
+  // Workaround for STM32 Arduino core problem
+  // keep this empty
+}
