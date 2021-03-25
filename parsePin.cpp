@@ -187,423 +187,423 @@ byte parsePin(String *pinStr)
     }
 #endif
 
-#ifdef PA_1
+#ifdef PA1
     else if (*pinStr == "PA1")
     {
-      return PA_1;
+      return PA1;
     }
 #endif
 
-#ifdef PA_2
+#ifdef PA2
     else if (*pinStr == "PA2")
     {
-      return PA_2;
+      return PA2;
     }
 #endif
 
-#ifdef PA_3
+#ifdef PA3
     else if (*pinStr == "PA3")
     {
-      return PA_3;
+      return PA3;
     }
 #endif
 
-#ifdef PA_4
+#ifdef PA4
     else if (*pinStr == "PA4")
     {
-      return PA_4;
+      return PA4;
     }
 #endif
 
-#ifdef PA_5
+#ifdef PA5
     else if (*pinStr == "PA5")
     {
-      return PA_5;
+      return PA5;
     }
 #endif
 
-#ifdef PA_6
+#ifdef PA6
     else if (*pinStr == "PA6")
     {
-      return PA_6;
+      return PA6;
     }
 #endif
 
-#ifdef PA_7
+#ifdef PA7
     else if (*pinStr == "PA7")
     {
-      return PA_7;
+      return PA7;
     }
 #endif
 
-#ifdef PA_8
+#ifdef PA8
     else if (*pinStr == "PA8")
     {
-      return PA_8;
+      return PA8;
     }
 #endif
 
-#ifdef PA_9
+#ifdef PA9
     else if (*pinStr == "PA9")
     {
-      return PA_9;
+      return PA9;
     }
 #endif
 
-#ifdef PA_10
+#ifdef PA10
     else if (*pinStr == "PA10")
     {
-      return PA_10;
+      return PA10;
     }
 #endif
 
-#ifdef PA_11
+#ifdef PA11
     else if (*pinStr == "PA11")
     {
-      return PA_11;
+      return PA11;
     }
 #endif
 
-#ifdef PA_12
+#ifdef PA12
     else if (*pinStr == "PA12")
     {
-      return PA_12;
+      return PA12;
     }
 #endif
 
-#ifdef PA_13
+#ifdef PA13
     else if (*pinStr == "PA13")
     {
-      return PA_13;
+      return PA13;
     }
 #endif
 
-#ifdef PA_14
+#ifdef PA14
     else if (*pinStr == "PA14")
     {
-      return PA_14;
+      return PA14;
     }
 #endif
 
-#ifdef PA_15
+#ifdef PA15
     else if (*pinStr == "PA15")
     {
-      return PA_15;
+      return PA15;
     }
 #endif
 
-#ifdef PB_1
+#ifdef PB1
     else if (*pinStr == "PB1")
     {
-      return PB_1;
+      return PB1;
     }
 #endif
 
-#ifdef PB_2
+#ifdef PB2
     else if (*pinStr == "PB2")
     {
-      return PB_2;
+      return PB2;
     }
 #endif
 
-#ifdef PB_3
+#ifdef PB3
     else if (*pinStr == "PB3")
     {
-      return PB_3;
+      return PB3;
     }
 #endif
 
-#ifdef PB_4
+#ifdef PB4
     else if (*pinStr == "PB4")
     {
-      return PB_4;
+      return PB4;
     }
 #endif
 
-#ifdef PB_5
+#ifdef PB5
     else if (*pinStr == "PB5")
     {
-      return PB_5;
+      return PB5;
     }
 #endif
 
-#ifdef PB_6
+#ifdef PB6
     else if (*pinStr == "PB6")
     {
-      return PB_6;
+      return PB6;
     }
 #endif
 
-#ifdef PB_7
+#ifdef PB7
     else if (*pinStr == "PB7")
     {
-      return PB_7;
+      return PB7;
     }
 #endif
 
-#ifdef PB_8
+#ifdef PB8
     else if (*pinStr == "PB8")
     {
-      return PB_8;
+      return PB8;
     }
 #endif
 
-#ifdef PB_9
+#ifdef PB9
     else if (*pinStr == "PB9")
     {
-      return PB_9;
+      return PB9;
     }
 #endif
 
-#ifdef PB_10
+#ifdef PB10
     else if (*pinStr == "PB10")
     {
-      return PB_10;
+      return PB10;
     }
 #endif
 
-#ifdef PB_11
+#ifdef PB11
     else if (*pinStr == "PB11")
     {
-      return PB_11;
+      return PB11;
     }
 #endif
 
-#ifdef PB_12
+#ifdef PB12
     else if (*pinStr == "PB12")
     {
-      return PB_12;
+      return PB12;
     }
 #endif
 
-#ifdef PB_13
+#ifdef PB13
     else if (*pinStr == "PB13")
     {
-      return PB_13;
+      return PB13;
     }
 #endif
 
-#ifdef PB_14
+#ifdef PB14
     else if (*pinStr == "PB14")
     {
-      return PB_14;
+      return PB14;
     }
 #endif
 
-#ifdef PB_15
+#ifdef PB15
     else if (*pinStr == "PB15")
     {
-      return PB_15;
+      return PB15;
     }
 #endif
 
-#ifdef PC_1
+#ifdef PC1
     else if (*pinStr == "PC1")
     {
-      return PC_1;
+      return PC1;
     }
 #endif
 
-#ifdef PC_2
+#ifdef PC2
     else if (*pinStr == "PC2")
     {
-      return PC_2;
+      return PC2;
     }
 #endif
 
-#ifdef PC_3
+#ifdef PC3
     else if (*pinStr == "PC3")
     {
-      return PC_3;
+      return PC3;
     }
 #endif
 
-#ifdef PC_4
+#ifdef PC4
     else if (*pinStr == "PC4")
     {
-      return PC_4;
+      return PC4;
     }
 #endif
 
-#ifdef PC_5
+#ifdef PC5
     else if (*pinStr == "PC5")
     {
-      return PC_5;
+      return PC5;
     }
 #endif
 
-#ifdef PC_6
+#ifdef PC6
     else if (*pinStr == "PC6")
     {
-      return PC_6;
+      return PC6;
     }
 #endif
 
-#ifdef PC_7
+#ifdef PC7
     else if (*pinStr == "PC7")
     {
-      return PC_7;
+      return PC7;
     }
 #endif
 
-#ifdef PC_8
+#ifdef PC8
     else if (*pinStr == "PC8")
     {
-      return PC_8;
+      return PC8;
     }
 #endif
 
-#ifdef PC_9
+#ifdef PC9
     else if (*pinStr == "PC9")
     {
-      return PC_9;
+      return PC9;
     }
 #endif
 
-#ifdef PC_10
+#ifdef PC10
     else if (*pinStr == "PC10")
     {
-      return PC_10;
+      return PC10;
     }
 #endif
 
-#ifdef PC_11
+#ifdef PC11
     else if (*pinStr == "PC11")
     {
-      return PC_11;
+      return PC11;
     }
 #endif
 
-#ifdef PC_12
+#ifdef PC12
     else if (*pinStr == "PC12")
     {
-      return PC_12;
+      return PC12;
     }
 #endif
 
-#ifdef PC_13
+#ifdef PC13
     else if (*pinStr == "PC13")
     {
-      return PC_13;
+      return PC13;
     }
 #endif
 
-#ifdef PC_14
+#ifdef PC14
     else if (*pinStr == "PC14")
     {
-      return PC_14;
+      return PC14;
     }
 #endif
 
-#ifdef PC_15
+#ifdef PC15
     else if (*pinStr == "PC15")
     {
-      return PC_15;
+      return PC15;
     }
 #endif
 
-#ifdef PD_1
+#ifdef PD1
     else if (*pinStr == "PD1")
     {
-      return PD_1;
+      return PD1;
     }
 #endif
 
-#ifdef PD_2
+#ifdef PD2
     else if (*pinStr == "PD2")
     {
-      return PD_2;
+      return PD2;
     }
 #endif
 
-#ifdef PD_3
+#ifdef PD3
     else if (*pinStr == "PD3")
     {
-      return PD_3;
+      return PD3;
     }
 #endif
 
-#ifdef PD_4
+#ifdef PD4
     else if (*pinStr == "PD4")
     {
-      return PD_4;
+      return PD4;
     }
 #endif
 
-#ifdef PD_5
+#ifdef PD5
     else if (*pinStr == "PD5")
     {
-      return PD_5;
+      return PD5;
     }
 #endif
 
-#ifdef PD_6
+#ifdef PD6
     else if (*pinStr == "PD6")
     {
-      return PD_6;
+      return PD6;
     }
 #endif
 
-#ifdef PD_7
+#ifdef PD7
     else if (*pinStr == "PD7")
     {
-      return PD_7;
+      return PD7;
     }
 #endif
 
-#ifdef PD_8
+#ifdef PD8
     else if (*pinStr == "PD8")
     {
-      return PD_8;
+      return PD8;
     }
 #endif
 
-#ifdef PD_9
+#ifdef PD9
     else if (*pinStr == "PD9")
     {
-      return PD_9;
+      return PD9;
     }
 #endif
 
-#ifdef PD_10
+#ifdef PD10
     else if (*pinStr == "PD10")
     {
-      return PD_10;
+      return PD10;
     }
 #endif
 
-#ifdef PD_11
+#ifdef PD11
     else if (*pinStr == "PD11")
     {
-      return PD_11;
+      return PD11;
     }
 #endif
 
-#ifdef PD_12
+#ifdef PD12
     else if (*pinStr == "PD12")
     {
-      return PD_12;
+      return PD12;
     }
 #endif
 
-#ifdef PD_13
+#ifdef PD13
     else if (*pinStr == "PD13")
     {
-      return PD_13;
+      return PD13;
     }
 #endif
 
-#ifdef PD_14
+#ifdef PD14
     else if (*pinStr == "PD14")
     {
-      return PD_14;
+      return PD14;
     }
 #endif
 
-#ifdef PD_15
+#ifdef PD15
     else if (*pinStr == "PD15")
     {
-      return PD_15;
+      return PD15;
     }
 #endif
 
