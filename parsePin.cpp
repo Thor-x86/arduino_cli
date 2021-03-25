@@ -19,171 +19,171 @@ byte parsePin(String *pinStr)
       return PIN_INVALID;
     }
 
-#ifdef A0
+#ifdef PIN_A0
     else if (*pinStr == "A0")
     {
-      return A0;
+      return PIN_A0;
     }
 #endif
 
-#ifdef A1
+#ifdef PIN_A1
     else if (*pinStr == "A1")
     {
-      return A1;
+      return PIN_A1;
     }
 #endif
 
-#ifdef A2
+#ifdef PIN_A2
     else if (*pinStr == "A2")
     {
-      return A2;
+      return PIN_A2;
     }
 #endif
 
-#ifdef A3
+#ifdef PIN_A3
     else if (*pinStr == "A3")
     {
-      return A3;
+      return PIN_A3;
     }
 #endif
 
-#ifdef A4
+#ifdef PIN_A4
     else if (*pinStr == "A4")
     {
-      return A4;
+      return PIN_A4;
     }
 #endif
 
-#ifdef A5
+#ifdef PIN_A5
     else if (*pinStr == "A5")
     {
-      return A5;
+      return PIN_A5;
     }
 #endif
 
-#ifdef A6
+#ifdef PIN_A6
     else if (*pinStr == "A6")
     {
-      return A6;
+      return PIN_A6;
     }
 #endif
 
-#ifdef A7
+#ifdef PIN_A7
     else if (*pinStr == "A7")
     {
-      return A7;
+      return PIN_A7;
     }
 #endif
 
-#ifdef A8
+#ifdef PIN_A8
     else if (*pinStr == "A8")
     {
-      return A8;
+      return PIN_A8;
     }
 #endif
 
-#ifdef A9
+#ifdef PIN_A9
     else if (*pinStr == "A9")
     {
-      return A9;
+      return PIN_A9;
     }
 #endif
 
-#ifdef A10
+#ifdef PIN_A10
     else if (*pinStr == "A10")
     {
-      return A10;
+      return PIN_A10;
     }
 #endif
 
-#ifdef A11
+#ifdef PIN_A11
     else if (*pinStr == "A11")
     {
-      return A11;
+      return PIN_A11;
     }
 #endif
 
-#ifdef A12
+#ifdef PIN_A12
     else if (*pinStr == "A12")
     {
-      return A12;
+      return PIN_A12;
     }
 #endif
 
-#ifdef A13
+#ifdef PIN_A13
     else if (*pinStr == "A13")
     {
-      return A13;
+      return PIN_A13;
     }
 #endif
 
-#ifdef A14
+#ifdef PIN_A14
     else if (*pinStr == "A14")
     {
-      return A14;
+      return PIN_A14;
     }
 #endif
 
-#ifdef A15
+#ifdef PIN_A15
     else if (*pinStr == "A15")
     {
-      return A15;
+      return PIN_A15;
     }
 #endif
 
-#ifdef A16
+#ifdef PIN_A16
     else if (*pinStr == "A16")
     {
-      return A16;
+      return PIN_A16;
     }
 #endif
 
-#ifdef A17
+#ifdef PIN_A17
     else if (*pinStr == "A17")
     {
-      return A17;
+      return PIN_A17;
     }
 #endif
 
-#ifdef A18
+#ifdef PIN_A18
     else if (*pinStr == "A18")
     {
-      return A18;
+      return PIN_A18;
     }
 #endif
 
-#ifdef A19
+#ifdef PIN_A19
     else if (*pinStr == "A19")
     {
-      return A19;
+      return PIN_A19;
     }
 #endif
 
-#ifdef A20
+#ifdef PIN_A20
     else if (*pinStr == "A20")
     {
-      return A20;
+      return PIN_A20;
     }
 #endif
 
-#ifdef A21
+#ifdef PIN_A21
     else if (*pinStr == "A21")
     {
-      return A21;
+      return PIN_A21;
     }
 #endif
 
-#ifdef A22
+#ifdef PIN_A22
     else if (*pinStr == "A22")
     {
-      return A22;
+      return PIN_A22;
     }
 #endif
 
-#ifdef A23
+#ifdef PIN_A23
     else if (*pinStr == "A23")
     {
-      return A23;
+      return PIN_A23;
     }
 #endif
 
